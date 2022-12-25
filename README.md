@@ -1,8 +1,8 @@
 - # Deep lane departue warning c++ inference
 
-  A Lane departure warning system is desgined to notify the driver the stray of the vehicale from its normal path, this way, crashes due to drifting from   lines will be minimized.This project has been written in C++ and python and also has been tested in Jetson Nano 2GB and Raspberrty pi 3b and has 3 different outputs regarding the warning.Training process has been done on a Google colab server with gpu support and then the model is exported as .h5 file. This file is further fed to a python script to be transformed to a .tflite binary file and this discretized file will be inferenced in this project
-
-- # Prequisites 
+  A Lane departure warning system is designed to notify the driver the stray of the vehicle from its normal path, this way, crashes due to drifting from lines will be minimized.This project has been written in C++ and python and also has been tested in Jetson Nano 2GB and Raspberrty pi 3b and has 3 different outputs regarding the warning.Training process has been done on a Google colab server with gpu support and then the model is exported as .h5 file. This file is further fed to a python script to be transformed to a .tflite binary file and this discretized file will be inferenced in this project
+  
+- # Perquisites 
   - gcc & g++ (9.4.0)
   - Opencv tested both on (4.5.5 / 4.6.1)
   - Tensorflow lite (2.6.0 / built from source)
@@ -13,7 +13,7 @@
 - # Outputs 
   This project will provide 3 different outputs:
   * **Segmented initial video stream**:
-    This mode will process the input stream, segment the area between the lanes and will provide a line from  bottom middle of the stream which will be representing the middle of the stream, and the deviation of this line will determine the status of the vehicale (ON TRACK / OFF TRACK)
+    This mode will process the input stream, segment the area between the lanes and will provide a line from  bottom middle of the stream which will be representing the middle of the stream, and the deviation of this line will determine the status of the vehicle (ON TRACK / OFF TRACK)
     
       ![image](https://user-images.githubusercontent.com/89359094/209444036-e7ec2959-890a-4118-8e22-4ac79f7f7bc0.png)
   * **Artificial video**:
